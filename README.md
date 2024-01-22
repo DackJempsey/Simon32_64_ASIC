@@ -1,4 +1,4 @@
-# Simon32_64_ASIC
+# Simon32_64 ASIC Design
 
 ## Design Discussion
 The decisions for design of this chip tried to trade area for speed. It is clear from the Quality metric that more weight was put on the latency of the design. This led me to focus efforts on streamlining the original System Verilog that I had from milestone 1. In my milestone 1 SystemVerilog I had designed it without regard for timing, only function. This led to a slow design. During synthesis the clock period that was found was 240ps (I then used a period of for apr 288 which is 1.2 times 240). This design included 4 round modules at the start, which completed the first 4 rounds (each with a key of 16 bits), then went into a sub_simon32 module which computed the rounds and the key expansion in one. Each of these was wired together. This caused a slower clock period necessary however the final cipher key was ready at 28 cycles with 28 sub_simon32 modules. 
