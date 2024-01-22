@@ -9,4 +9,4 @@ I found that this design (while now needing 32 sub_simon modules and 32 cycles t
 \
  The bottlenecks for this final design are definitely in power. I tried to push both the timing and area constraints. The quality metric for this design put more emphasis on the total latency, which is why my optimizations came from re-working system verilog. I do see how I could have pushed for a tighter area, since I see some space in the innovus layout. Also due to hiccups in the software we did not use the post layout Prime Time analysis tool. The main controls for which there was to optimize were: SystemVerilog code, Timing Constraint, Area constraints. From there I was able to solidify my design.
 
-![screenshot](Screenshot 2024-01-22 at 1.38.32 PM.png)
+![Screenshot](Screenshot\ 2024-01-22\ at\ 1.38.32\ PM.png)
