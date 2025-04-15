@@ -1,5 +1,5 @@
 # Simon32/64 ASIC – A Lightweight Cryptographic Core for Secure Embedded Systems
-This project is a Verilog RTL implementation of the (Simon32/64 lightweight block cipher)[https://eprint.iacr.org/2013/404.pdf], optimized for high-speed cryptographic operations on resource-constrained embedded systems. It explores tradeoffs between area, timing, and power, offering a pipeline-friendly structure ideal for secure, low-latency applications.
+This project is a Verilog RTL implementation of the [Simon32/64 lightweight block cipher](https://eprint.iacr.org/2013/404.pdf), optimized for high-speed cryptographic operations on resource-constrained embedded systems. It explores tradeoffs between area, timing, and power, offering a pipeline-friendly structure ideal for secure, low-latency applications.
 ## Project Overview
 Simon is a block cipher developed by the NSA, designed for efficiency in hardware environments. This project implements the Simon32/64 configuration, targeting ASIC design with a focus on:\
 - Low latency encryption
